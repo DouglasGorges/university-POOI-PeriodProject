@@ -16,5 +16,52 @@ namespace university_POOI_PeriodProject
         {
             InitializeComponent();
         }
+
+        private void sairToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void básicoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CursoBasico basico = new CursoBasico();
+            basico.Show();
+            this.Hide();
+        }
+
+        private void intermediárioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CursoIntermediario intermediario = new CursoIntermediario();
+            intermediario.Show();
+            this.Hide();
+        }
+
+        private void avançadoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CursoAvancado avancado = new CursoAvancado();
+            avancado.Show();
+            this.Hide();
+        }
+
+        private void cadastrarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AlunosCadastrar cadastrar = new AlunosCadastrar();
+            cadastrar.Show();
+            this.Hide();
+        }
+
+        private void listarMatriculadosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AlunosListar listar = new AlunosListar();
+            listar.Show();
+            this.Hide();
+        }
+
+        private void sobreToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Sobre sobre = new Sobre();
+            sobre.Show();
+            this.Hide();
+        }
     }
 }

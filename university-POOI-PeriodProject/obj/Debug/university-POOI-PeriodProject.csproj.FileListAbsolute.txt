@@ -1,0 +1,11 @@
+D:\Faculdade\GitHub\university-POOI-PeriodProject\university-POOI-PeriodProject\bin\Debug\university-POOI-PeriodProject.exe.config
+D:\Faculdade\GitHub\university-POOI-PeriodProject\university-POOI-PeriodProject\bin\Debug\university-POOI-PeriodProject.exe
+D:\Faculdade\GitHub\university-POOI-PeriodProject\university-POOI-PeriodProject\bin\Debug\university-POOI-PeriodProject.pdb
+D:\Faculdade\GitHub\university-POOI-PeriodProject\university-POOI-PeriodProject\obj\Debug\university-POOI-PeriodProject.csprojAssemblyReference.cache
+D:\Faculdade\GitHub\university-POOI-PeriodProject\university-POOI-PeriodProject\obj\Debug\university_POOI_PeriodProject.Home.resources
+D:\Faculdade\GitHub\university-POOI-PeriodProject\university-POOI-PeriodProject\obj\Debug\university_POOI_PeriodProject.Properties.Resources.resources
+D:\Faculdade\GitHub\university-POOI-PeriodProject\university-POOI-PeriodProject\obj\Debug\university-POOI-PeriodProject.csproj.GenerateResource.cache
+D:\Faculdade\GitHub\university-POOI-PeriodProject\university-POOI-PeriodProject\obj\Debug\university-POOI-PeriodProject.csproj.CoreCompileInputs.cache
+D:\Faculdade\GitHub\university-POOI-PeriodProject\university-POOI-PeriodProject\obj\Debug\university-POOI-PeriodProject.exe
+D:\Faculdade\GitHub\university-POOI-PeriodProject\university-POOI-PeriodProject\obj\Debug\university-POOI-PeriodProject.pdb
+D:\Faculdade\GitHub\university-POOI-PeriodProject\university-POOI-PeriodProject\obj\Debug\university_POOI_PeriodProject.Sobre.resources
