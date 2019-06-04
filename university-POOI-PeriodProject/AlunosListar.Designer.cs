@@ -28,10 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // AlunosListar
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(464, 441);
+            this.Name = "AlunosListar";
             this.Text = "AlunosListar";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.AlunosListar_FormClosed);
+            this.ResumeLayout(false);
+
         }
 
         #endregion

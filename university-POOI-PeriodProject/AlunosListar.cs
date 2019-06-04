@@ -16,5 +16,26 @@ namespace university_POOI_PeriodProject
         {
             InitializeComponent();
         }
+
+        private void AlunosListar_FormClosed(object sender, FormClosedEventArgs e)
+        {
+
+            if (Application.OpenForms.Count == 0)
+            {
+                Application.Exit();
+            }
+            else
+            {
+                foreach (Form formAberto in Application.OpenForms)
+                {
+                    if (formAberto is Home)
+                    {
+                        formAberto.Show();
+                        break;
+                    }
+                }
+            }
+
+        }
     }
 }

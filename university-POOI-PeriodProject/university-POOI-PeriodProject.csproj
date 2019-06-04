@@ -45,6 +45,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Aluno.cs" />
     <Compile Include="AlunosCadastrar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -89,6 +90,21 @@
     <Compile Include="Sobre.Designer.cs">
       <DependentUpon>Sobre.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AlunosCadastrar.resx">
+      <DependentUpon>AlunosCadastrar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AlunosListar.resx">
+      <DependentUpon>AlunosListar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CursoAvancado.resx">
+      <DependentUpon>CursoAvancado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CursoBasico.resx">
+      <DependentUpon>CursoBasico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CursoIntermediario.resx">
+      <DependentUpon>CursoIntermediario.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

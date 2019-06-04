@@ -9,3 +9,8 @@ D:\Faculdade\GitHub\university-POOI-PeriodProject\university-POOI-PeriodProject\
 D:\Faculdade\GitHub\university-POOI-PeriodProject\university-POOI-PeriodProject\obj\Debug\university-POOI-PeriodProject.exe
 D:\Faculdade\GitHub\university-POOI-PeriodProject\university-POOI-PeriodProject\obj\Debug\university-POOI-PeriodProject.pdb
 D:\Faculdade\GitHub\university-POOI-PeriodProject\university-POOI-PeriodProject\obj\Debug\university_POOI_PeriodProject.Sobre.resources
+D:\Faculdade\GitHub\university-POOI-PeriodProject\university-POOI-PeriodProject\obj\Debug\university_POOI_PeriodProject.AlunosCadastrar.resources
+D:\Faculdade\GitHub\university-POOI-PeriodProject\university-POOI-PeriodProject\obj\Debug\university_POOI_PeriodProject.AlunosListar.resources
+D:\Faculdade\GitHub\university-POOI-PeriodProject\university-POOI-PeriodProject\obj\Debug\university_POOI_PeriodProject.CursoAvancado.resources
+D:\Faculdade\GitHub\university-POOI-PeriodProject\university-POOI-PeriodProject\obj\Debug\university_POOI_PeriodProject.CursoBasico.resources
+D:\Faculdade\GitHub\university-POOI-PeriodProject\university-POOI-PeriodProject\obj\Debug\university_POOI_PeriodProject.CursoIntermediario.resources
