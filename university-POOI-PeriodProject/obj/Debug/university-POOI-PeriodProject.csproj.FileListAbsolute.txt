@@ -14,3 +14,4 @@ D:\Faculdade\GitHub\university-POOI-PeriodProject\university-POOI-PeriodProject\
 D:\Faculdade\GitHub\university-POOI-PeriodProject\university-POOI-PeriodProject\obj\Debug\university_POOI_PeriodProject.CursoAvancado.resources
 D:\Faculdade\GitHub\university-POOI-PeriodProject\university-POOI-PeriodProject\obj\Debug\university_POOI_PeriodProject.CursoBasico.resources
 D:\Faculdade\GitHub\university-POOI-PeriodProject\university-POOI-PeriodProject\obj\Debug\university_POOI_PeriodProject.CursoIntermediario.resources
+D:\Faculdade\GitHub\university-POOI-PeriodProject\university-POOI-PeriodProject\obj\Debug\university_POOI_PeriodProject.FormaPagamento.resources

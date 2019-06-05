@@ -37,5 +37,17 @@ namespace university_POOI_PeriodProject
             }
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FormaPagamento formaPagamento = new FormaPagamento();
+            formaPagamento.Show();
+            this.Hide();
+        }
+
+        private void textBox6_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
