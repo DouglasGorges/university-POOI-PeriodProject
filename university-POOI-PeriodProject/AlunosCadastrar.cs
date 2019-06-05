@@ -49,5 +49,43 @@ namespace university_POOI_PeriodProject
         {
 
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+
+            foreach (Form formAberto in Application.OpenForms)
+            {
+                if (formAberto is Home)
+                {
+                    formAberto.Show();
+                    break;
+                }
+            }
+        }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButton1.Checked)
+            {
+                pictureBox1.Image = null;
+            }
+        }
+
+        private void radioButton2_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButton2.Checked)
+            {
+                pictureBox1.Image = null;
+            }
+        }
+
+        private void radioButton3_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButton3.Checked)
+            {
+                pictureBox1.Image = null;
+            }
+        }
     }
 }

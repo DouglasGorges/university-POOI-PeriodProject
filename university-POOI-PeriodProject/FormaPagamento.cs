@@ -35,5 +35,21 @@ namespace university_POOI_PeriodProject
                 }
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            
+            
+            this.Hide();
+
+            foreach (Form formAberto in Application.OpenForms)
+                {
+                    if (formAberto is AlunosCadastrar)
+                    {
+                        formAberto.Show();
+                        break;
+                    }
+                }
+        }
     }
 }
