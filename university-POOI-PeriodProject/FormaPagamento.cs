@@ -12,6 +12,11 @@ namespace university_POOI_PeriodProject
 {
     public partial class FormaPagamento : Form
     {
+        double PRECOCURSOBASICO = 1000;
+        double PRECOCURSOINTERMEDIARIO = 2000;
+        double PRECOCURSOAVANCADO = 5000;
+        double VALORAVISTA = 0.8;
+
         public FormaPagamento()
         {
             InitializeComponent();
@@ -50,6 +55,27 @@ namespace university_POOI_PeriodProject
                         break;
                     }
                 }
+        }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButton1.Checked)
+            {
+                textBox1.Text = ($"R${PRECOCURSOBASICO * VALORAVISTA}");
+                textBox2.Text = ($"R${PRECOCURSOINTERMEDIARIO * VALORAVISTA}");
+                textBox3.Text = ($"R${PRECOCURSOAVANCADO * VALORAVISTA}");
+            }
+        }
+
+        private void radioButton2_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButton2.Checked)
+            {
+                textBox1.Text = ($"R${PRECOCURSOBASICO}");
+                textBox2.Text = ($"R${PRECOCURSOINTERMEDIARIO}");
+                textBox3.Text = ($"R${PRECOCURSOAVANCADO}");
+            }
+
         }
     }
 }

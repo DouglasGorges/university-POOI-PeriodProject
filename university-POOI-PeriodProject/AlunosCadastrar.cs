@@ -12,6 +12,7 @@ namespace university_POOI_PeriodProject
 {
     public partial class AlunosCadastrar : Form
     {
+        
         public AlunosCadastrar()
         {
             InitializeComponent();
@@ -37,6 +38,7 @@ namespace university_POOI_PeriodProject
             }
 
         }
+
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -68,15 +70,17 @@ namespace university_POOI_PeriodProject
         {
             if (radioButton1.Checked)
             {
-                pictureBox1.Image = null;
+                pictureBox1.ImageLocation = "D:/Faculdade/GitHub/university-POOI-PeriodProject/university-POOI-PeriodProject/resources/paoComOvo.jpg";
             }
         }
 
         private void radioButton2_CheckedChanged(object sender, EventArgs e)
         {
+            
+
             if (radioButton2.Checked)
             {
-                pictureBox1.Image = null;
+                pictureBox1.ImageLocation = "D:/Faculdade/GitHub/university-POOI-PeriodProject/university-POOI-PeriodProject/resources/lasanha.jpg";
             }
         }
 
@@ -84,8 +88,44 @@ namespace university_POOI_PeriodProject
         {
             if (radioButton3.Checked)
             {
-                pictureBox1.Image = null;
+                pictureBox1.ImageLocation = "D:/Faculdade/GitHub/university-POOI-PeriodProject/university-POOI-PeriodProject/resources/sushi.jpg";
             }
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox1.Checked == false)
+            {
+                checkBox2.Enabled = false;
+                checkBox2.Checked = false;
+                radioButton2.Enabled = false;
+                radioButton2.Checked = false;
+                radioButton3.Enabled = false;
+                radioButton3.Checked = false;
+
+                radioButton1.Checked = true;
+            }
+            else if (checkBox1.Checked == true)
+            {
+                radioButton2.Enabled = true;
+                radioButton2.Checked = true;
+                checkBox2.Enabled = true;
+            }
+        }
+
+        private void checkBox2_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox2.Checked == false)
+            {
+                radioButton3.Enabled = false;
+                radioButton2.Checked = true;
+            }
+            else if (checkBox2.Checked == true)
+            {
+                radioButton3.Enabled = true;
+                radioButton3.Checked = true;
+            }
+
         }
     }
 }
