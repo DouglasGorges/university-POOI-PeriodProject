@@ -55,6 +55,8 @@ namespace university_POOI_PeriodProject
             AlunosListar listar = new AlunosListar();
             listar.Show();
             this.Hide();
+
+
         }
 
         private void sobreToolStripMenuItem_Click(object sender, EventArgs e)

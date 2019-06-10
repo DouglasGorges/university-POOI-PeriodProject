@@ -127,5 +127,70 @@ namespace university_POOI_PeriodProject
             }
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Aluno aluno = new Aluno();
+            aluno.setNome(textBox1.Text);
+            aluno.setCpf(double.Parse(textBox2.Text));
+            //aluno.setDataNascimento(DateTime.Parse(dateTimePicker1));
+            aluno.setTelefone(textBox3.Text);
+
+            if (radioButton1.Checked == true)
+            {
+                aluno.setVaiCursarBasico(true);
+            }
+            else
+            {
+                aluno.setVaiCursarBasico(false);
+            }
+
+
+            if (radioButton2.Checked == true)
+            {
+                aluno.setVaiCursarIntermediario(true);
+            }
+            else
+            {
+                aluno.setVaiCursarIntermediario(false);
+            }
+
+            if (radioButton3.Checked == true)
+            {
+                aluno.setVaiCursarAvancado(true);
+            }
+            else
+            {
+                aluno.setVaiCursarAvancado(false);
+            }
+
+            if (checkBox1.Checked == true)
+            {
+                aluno.setCursouBasico(true);
+            }
+            else
+            {
+                aluno.setCursouBasico(false);
+            }
+
+            if (checkBox2.Checked == true)
+            {
+                aluno.setCursouIntermediario(true);
+            }
+            else
+            {
+                aluno.setCursouIntermediario(false);
+            }
+
+            AlunosListar alunosListar = new AlunosListar();
+            ListViewItem lvi = new ListViewItem(aluno.getNome());
+            lvi.SubItems.Add(aluno.getTelefone());
+            lvi.SubItems.Add(aluno.getCurso());
+            alunosListar.setListView1(lvi);
+
+            ConfirmacaoDeCadastro confirmacaoDeCadastro = new ConfirmacaoDeCadastro();
+            confirmacaoDeCadastro.Show();
+            this.Hide();
+        }
     }
 }

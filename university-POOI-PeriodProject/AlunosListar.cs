@@ -16,6 +16,11 @@ namespace university_POOI_PeriodProject
         {
             InitializeComponent();
         }
+        
+        public void setListView1(ListViewItem lvi)
+        {
+            listView1.Items.Add(lvi);
+        }
 
         private void AlunosListar_FormClosed(object sender, FormClosedEventArgs e)
         {
@@ -35,7 +40,6 @@ namespace university_POOI_PeriodProject
                     }
                 }
             }
-
         }
     }
 }

@@ -132,8 +132,9 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(130, 42);
             this.button2.TabIndex = 7;
-            this.button2.Text = "Gravar e Cadastrar Novo";
+            this.button2.Text = "SALVAR";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // pictureBox1
             // 
