@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,11 +18,6 @@ namespace university_POOI_PeriodProject
             InitializeComponent();
         }
         
-        public void setListView1(ListViewItem lvi)
-        {
-            listView1.Items.Add(lvi);
-        }
-
         private void AlunosListar_FormClosed(object sender, FormClosedEventArgs e)
         {
 
@@ -40,6 +36,20 @@ namespace university_POOI_PeriodProject
                     }
                 }
             }
+        }
+
+        private void showInListView(ArrayList alunosMatriculados)
+        {
+            /*
+            AlunosListar alunosListar = new AlunosListar();
+            ListViewItem lvi = new ListViewItem(alunosMatriculados.);
+            lvi.SubItems.Add(aluno.getTelefone());
+            lvi.SubItems.Add(aluno.getCurso());
+            alunosListar.setListView1(lvi);
+
+            listView1.Items.Add();
+
+            */
         }
     }
 }

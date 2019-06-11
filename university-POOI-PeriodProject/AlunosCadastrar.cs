@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -128,6 +129,8 @@ namespace university_POOI_PeriodProject
 
         }
 
+        public ArrayList alunosMatriculados = new ArrayList();
+
         private void button2_Click(object sender, EventArgs e)
         {
             Aluno aluno = new Aluno();
@@ -135,6 +138,8 @@ namespace university_POOI_PeriodProject
             aluno.setCpf(double.Parse(textBox2.Text));
             //aluno.setDataNascimento(DateTime.Parse(dateTimePicker1));
             aluno.setTelefone(textBox3.Text);
+            
+            alunosMatriculados.Add(aluno);
 
             if (radioButton1.Checked == true)
             {
@@ -182,15 +187,22 @@ namespace university_POOI_PeriodProject
                 aluno.setCursouIntermediario(false);
             }
 
-            AlunosListar alunosListar = new AlunosListar();
-            ListViewItem lvi = new ListViewItem(aluno.getNome());
-            lvi.SubItems.Add(aluno.getTelefone());
-            lvi.SubItems.Add(aluno.getCurso());
-            alunosListar.setListView1(lvi);
-
             ConfirmacaoDeCadastro confirmacaoDeCadastro = new ConfirmacaoDeCadastro();
             confirmacaoDeCadastro.Show();
             this.Hide();
+        }
+
+        public void formaDePagamento()
+        {
+            FormaPagamento formaPagamento = new FormaPagamento();
+
+            if (formaPagamento.vaiPagarEmDinheiro() == true)
+            {
+                if(radioButton1.Checked == true)
+                {
+                    textBox4.Text = "teste";
+                }
+            }
         }
     }
 }

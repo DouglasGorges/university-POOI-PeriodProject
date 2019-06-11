@@ -12,10 +12,17 @@ namespace university_POOI_PeriodProject
 {
     public partial class FormaPagamento : Form
     {
-        double PRECOCURSOBASICO = 1000;
-        double PRECOCURSOINTERMEDIARIO = 2000;
-        double PRECOCURSOAVANCADO = 5000;
-        double VALORAVISTA = 0.8;
+        private double PRECOCURSOBASICO = 1000;
+        private double PRECOCURSOINTERMEDIARIO = 2000;
+        private double PRECOCURSOAVANCADO = 5000;
+        private double VALORAVISTA = 0.8;
+
+        private double precoCursoBasico { get; set; }
+        private double precoCursoIntermediario { get; set; }
+        private double precoCursoAvancado { get; set; }
+
+        private bool emDinheiro = false;
+        private bool emDebito = false;
 
         public FormaPagamento()
         {
@@ -43,7 +50,7 @@ namespace university_POOI_PeriodProject
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
+
             
             this.Hide();
 
@@ -64,6 +71,13 @@ namespace university_POOI_PeriodProject
                 textBox1.Text = ($"R${PRECOCURSOBASICO * VALORAVISTA}");
                 textBox2.Text = ($"R${PRECOCURSOINTERMEDIARIO * VALORAVISTA}");
                 textBox3.Text = ($"R${PRECOCURSOAVANCADO * VALORAVISTA}");
+
+                precoCursoBasico = (PRECOCURSOBASICO * VALORAVISTA);
+                precoCursoIntermediario = (PRECOCURSOINTERMEDIARIO * VALORAVISTA);
+                precoCursoAvancado = (PRECOCURSOAVANCADO * VALORAVISTA);
+
+                emDinheiro = true;
+
             }
         }
 
@@ -74,8 +88,41 @@ namespace university_POOI_PeriodProject
                 textBox1.Text = ($"R${PRECOCURSOBASICO}");
                 textBox2.Text = ($"R${PRECOCURSOINTERMEDIARIO}");
                 textBox3.Text = ($"R${PRECOCURSOAVANCADO}");
+
+                precoCursoBasico = (PRECOCURSOBASICO);
+                precoCursoIntermediario = (PRECOCURSOINTERMEDIARIO);
+                precoCursoAvancado = (PRECOCURSOAVANCADO);
+
+                emDebito = true;
             }
 
+        }
+
+        public bool vaiPagarEmDinheiro()
+        {
+            if(emDinheiro == true)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        public double getPrecoCursoBasico()
+        {
+            return this.precoCursoBasico;
+        }
+
+        public double getPrecoCursoIntermediario()
+        {
+            return this.precoCursoIntermediario;
+        }
+
+        public double getPrecoCursoAvancado()
+        {
+            return this.precoCursoAvancado;
         }
     }
 }
