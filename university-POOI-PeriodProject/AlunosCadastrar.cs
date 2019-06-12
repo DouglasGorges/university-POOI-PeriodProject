@@ -13,6 +13,9 @@ namespace university_POOI_PeriodProject
 {
     public partial class AlunosCadastrar : Form
     {
+
+        private String DINHEIRO = "Dinheiro";
+        private String DEBITO = "Débito";
         
         public AlunosCadastrar()
         {
@@ -53,11 +56,25 @@ namespace university_POOI_PeriodProject
         {
             if(formaDePagamento.emDinheiro == true)
             {
-                textBox4.Text = "Dinheiro";
+                textBox4.Text = DINHEIRO;
             }
             else
             {
-                textBox4.Text = "Débito";
+                textBox4.Text = DEBITO;
+            }
+
+
+            if (textBox4.Text == DINHEIRO && radioButton1.Checked == true)
+            {
+                textBox7.Text = "R$1.000,00";
+                textBox5.Text = "R$200,00";
+                textBox6.Text = "R$800,00";
+            }
+            else
+            {
+                textBox7.Text = "R$1.000,00";
+                textBox5.Text = "R$--,--";
+                textBox6.Text = "R$1.000,00";
             }
 
             //TODO implementar preenchimentos restantes aqui
@@ -82,6 +99,8 @@ namespace university_POOI_PeriodProject
             if (radioButton1.Checked)
             {
                 pictureBox1.ImageLocation = "D:/Faculdade/GitHub/university-POOI-PeriodProject/university-POOI-PeriodProject/resources/paoComOvo.jpg";
+
+
             }
         }
 
@@ -148,6 +167,7 @@ namespace university_POOI_PeriodProject
             aluno.setCpf(double.Parse(textBox2.Text)); //falta tratar quando tem 0 à esquerda
             //aluno.setDataNascimento(DateTime.Parse(dateTimePicker1));
             aluno.setTelefone(textBox3.Text);
+            aluno.setVaiPagarComo(textBox4.Text);
             
             if (radioButton1.Checked == true)
             {

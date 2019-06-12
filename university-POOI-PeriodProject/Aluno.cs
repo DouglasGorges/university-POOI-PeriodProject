@@ -17,6 +17,7 @@ namespace university_POOI_PeriodProject
         bool vaiCursarBasico;
         bool vaiCursarIntermediario;
         bool vaiCursarAvancado;
+        String vaiPagarComo;
 
 
         public void setNome(String nome)
@@ -64,14 +65,19 @@ namespace university_POOI_PeriodProject
             this.vaiCursarAvancado = vaiCursarAvancado;
         }
 
+        public void setVaiPagarComo(String vaiPagarComo)
+        {
+            this.vaiPagarComo = vaiPagarComo;
+        }
+
         public String getNome()
         {
             return this.nome;
         }
 
-        public String getTelefone()
+        public String getPagamento()
         {
-            return this.telefone;
+            return this.vaiPagarComo;
         }
 
         public String getCurso()

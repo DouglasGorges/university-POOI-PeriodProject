@@ -65,7 +65,7 @@
             // 
             // columnHeader2
             // 
-            this.columnHeader2.Text = "Telefone";
+            this.columnHeader2.Text = "Pagamento";
             this.columnHeader2.Width = 120;
             // 
             // columnHeader3

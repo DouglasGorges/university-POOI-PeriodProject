@@ -51,7 +51,7 @@ namespace university_POOI_PeriodProject
                 //AlunosListar alunosListar = new AlunosListar();
                 ListViewItem lvi = new ListViewItem(aluno.getNome());
                 //lvi.SubItems.Add(aluno.getNome());
-                lvi.SubItems.Add(aluno.getTelefone());
+                lvi.SubItems.Add(aluno.getPagamento());
                 lvi.SubItems.Add(aluno.getCurso());
                 //alunosListar.setListView1(lvi);
 

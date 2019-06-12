@@ -16,3 +16,7 @@ D:\Faculdade\GitHub\university-POOI-PeriodProject\university-POOI-PeriodProject\
 D:\Faculdade\GitHub\university-POOI-PeriodProject\university-POOI-PeriodProject\obj\Debug\university_POOI_PeriodProject.CursoIntermediario.resources
 D:\Faculdade\GitHub\university-POOI-PeriodProject\university-POOI-PeriodProject\obj\Debug\university_POOI_PeriodProject.FormaPagamento.resources
 D:\Faculdade\GitHub\university-POOI-PeriodProject\university-POOI-PeriodProject\obj\Debug\university_POOI_PeriodProject.ConfirmacaoDeCadastro.resources
+D:\Faculdade\GitHub\university-POOI-PeriodProject\university-POOI-PeriodProject\bin\Debug\university-POOI-PeriodProject.exe.manifest
+D:\Faculdade\GitHub\university-POOI-PeriodProject\university-POOI-PeriodProject\bin\Debug\university-POOI-PeriodProject.application
+D:\Faculdade\GitHub\university-POOI-PeriodProject\university-POOI-PeriodProject\obj\Debug\university-POOI-PeriodProject.exe.manifest
+D:\Faculdade\GitHub\university-POOI-PeriodProject\university-POOI-PeriodProject\obj\Debug\university-POOI-PeriodProject.application
