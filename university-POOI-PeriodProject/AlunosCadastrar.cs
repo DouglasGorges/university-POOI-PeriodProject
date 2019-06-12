@@ -44,13 +44,23 @@ namespace university_POOI_PeriodProject
         private void button1_Click(object sender, EventArgs e)
         {
             FormaPagamento formaPagamento = new FormaPagamento();
-            formaPagamento.Show();
+            formaPagamento.FormaDePagamentoEscolhida += FormaPagamento_FormaDePagamentoEscolhida;
+            formaPagamento.abrir();
             this.Hide();
         }
 
-        private void textBox6_TextChanged(object sender, EventArgs e)
+        private void FormaPagamento_FormaDePagamentoEscolhida(FormaDePagamentoDTO formaDePagamento)
         {
+            if(formaDePagamento.emDinheiro == true)
+            {
+                textBox4.Text = "Dinheiro";
+            }
+            else
+            {
+                textBox4.Text = "Débito";
+            }
 
+            //TODO implementar preenchimentos restantes aqui
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -129,18 +139,16 @@ namespace university_POOI_PeriodProject
 
         }
 
-        public ArrayList alunosMatriculados = new ArrayList();
+        
 
         private void button2_Click(object sender, EventArgs e)
         {
             Aluno aluno = new Aluno();
             aluno.setNome(textBox1.Text);
-            aluno.setCpf(double.Parse(textBox2.Text));
+            aluno.setCpf(double.Parse(textBox2.Text)); //falta tratar quando tem 0 à esquerda
             //aluno.setDataNascimento(DateTime.Parse(dateTimePicker1));
             aluno.setTelefone(textBox3.Text);
             
-            alunosMatriculados.Add(aluno);
-
             if (radioButton1.Checked == true)
             {
                 aluno.setVaiCursarBasico(true);
@@ -187,22 +195,12 @@ namespace university_POOI_PeriodProject
                 aluno.setCursouIntermediario(false);
             }
 
+
+            Persistencia.Instance.AlunosMatriculados.Add(aluno);
+
             ConfirmacaoDeCadastro confirmacaoDeCadastro = new ConfirmacaoDeCadastro();
             confirmacaoDeCadastro.Show();
             this.Hide();
-        }
-
-        public void formaDePagamento()
-        {
-            FormaPagamento formaPagamento = new FormaPagamento();
-
-            if (formaPagamento.vaiPagarEmDinheiro() == true)
-            {
-                if(radioButton1.Checked == true)
-                {
-                    textBox4.Text = "teste";
-                }
-            }
         }
     }
 }

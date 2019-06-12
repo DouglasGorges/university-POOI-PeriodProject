@@ -38,18 +38,26 @@ namespace university_POOI_PeriodProject
             }
         }
 
-        private void showInListView(ArrayList alunosMatriculados)
+        public void abrir()
         {
-            /*
-            AlunosListar alunosListar = new AlunosListar();
-            ListViewItem lvi = new ListViewItem(alunosMatriculados.);
-            lvi.SubItems.Add(aluno.getTelefone());
-            lvi.SubItems.Add(aluno.getCurso());
-            alunosListar.setListView1(lvi);
+            showInListView();
+            Show();
+        }
 
-            listView1.Items.Add();
+        private void showInListView()
+        {
+            foreach(Aluno aluno in Persistencia.Instance.AlunosMatriculados)
+            {
+                //AlunosListar alunosListar = new AlunosListar();
+                ListViewItem lvi = new ListViewItem(aluno.getNome());
+                //lvi.SubItems.Add(aluno.getNome());
+                lvi.SubItems.Add(aluno.getTelefone());
+                lvi.SubItems.Add(aluno.getCurso());
+                //alunosListar.setListView1(lvi);
 
-            */
+                listView1.Items.Add(lvi);
+            }
+            
         }
     }
 }

@@ -53,7 +53,7 @@ namespace university_POOI_PeriodProject
         private void listarMatriculadosToolStripMenuItem_Click(object sender, EventArgs e)
         {
             AlunosListar listar = new AlunosListar();
-            listar.Show();
+            listar.abrir();
             this.Hide();
 
 

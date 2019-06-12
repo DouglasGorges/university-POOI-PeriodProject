@@ -216,7 +216,6 @@
             this.textBox6.Size = new System.Drawing.Size(130, 20);
             this.textBox6.TabIndex = 19;
             this.textBox6.Text = "R$0,00";
-            this.textBox6.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
             // 
             // label9
             // 

@@ -1,0 +1,17 @@
+D:\Faculdade\GitHub\university-POOI-PeriodProject\university-POOI-PeriodProject\bin\Release\university-POOI-PeriodProject.exe.config
+D:\Faculdade\GitHub\university-POOI-PeriodProject\university-POOI-PeriodProject\bin\Release\university-POOI-PeriodProject.exe
+D:\Faculdade\GitHub\university-POOI-PeriodProject\university-POOI-PeriodProject\bin\Release\university-POOI-PeriodProject.pdb
+D:\Faculdade\GitHub\university-POOI-PeriodProject\university-POOI-PeriodProject\obj\Release\university_POOI_PeriodProject.AlunosCadastrar.resources
+D:\Faculdade\GitHub\university-POOI-PeriodProject\university-POOI-PeriodProject\obj\Release\university_POOI_PeriodProject.AlunosListar.resources
+D:\Faculdade\GitHub\university-POOI-PeriodProject\university-POOI-PeriodProject\obj\Release\university_POOI_PeriodProject.ConfirmacaoDeCadastro.resources
+D:\Faculdade\GitHub\university-POOI-PeriodProject\university-POOI-PeriodProject\obj\Release\university_POOI_PeriodProject.CursoAvancado.resources
+D:\Faculdade\GitHub\university-POOI-PeriodProject\university-POOI-PeriodProject\obj\Release\university_POOI_PeriodProject.CursoBasico.resources
+D:\Faculdade\GitHub\university-POOI-PeriodProject\university-POOI-PeriodProject\obj\Release\university_POOI_PeriodProject.CursoIntermediario.resources
+D:\Faculdade\GitHub\university-POOI-PeriodProject\university-POOI-PeriodProject\obj\Release\university_POOI_PeriodProject.Home.resources
+D:\Faculdade\GitHub\university-POOI-PeriodProject\university-POOI-PeriodProject\obj\Release\university_POOI_PeriodProject.FormaPagamento.resources
+D:\Faculdade\GitHub\university-POOI-PeriodProject\university-POOI-PeriodProject\obj\Release\university_POOI_PeriodProject.Properties.Resources.resources
+D:\Faculdade\GitHub\university-POOI-PeriodProject\university-POOI-PeriodProject\obj\Release\university_POOI_PeriodProject.Sobre.resources
+D:\Faculdade\GitHub\university-POOI-PeriodProject\university-POOI-PeriodProject\obj\Release\university-POOI-PeriodProject.csproj.GenerateResource.cache
+D:\Faculdade\GitHub\university-POOI-PeriodProject\university-POOI-PeriodProject\obj\Release\university-POOI-PeriodProject.csproj.CoreCompileInputs.cache
+D:\Faculdade\GitHub\university-POOI-PeriodProject\university-POOI-PeriodProject\obj\Release\university-POOI-PeriodProject.exe
+D:\Faculdade\GitHub\university-POOI-PeriodProject\university-POOI-PeriodProject\obj\Release\university-POOI-PeriodProject.pdb

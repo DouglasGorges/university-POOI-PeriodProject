@@ -17,12 +17,11 @@ namespace university_POOI_PeriodProject
         private double PRECOCURSOAVANCADO = 5000;
         private double VALORAVISTA = 0.8;
 
-        private double precoCursoBasico { get; set; }
-        private double precoCursoIntermediario { get; set; }
-        private double precoCursoAvancado { get; set; }
+        private FormaDePagamentoDTO formaDePagamento;
 
-        private bool emDinheiro = false;
-        private bool emDebito = false;
+        public delegate void FormadePagamentoEscolhidaHandler(FormaDePagamentoDTO formaDePagamento);
+
+        public event FormadePagamentoEscolhidaHandler FormaDePagamentoEscolhida;
 
         public FormaPagamento()
         {
@@ -48,10 +47,15 @@ namespace university_POOI_PeriodProject
             }
         }
 
+        public void abrir()
+        {
+            //TODO se precisar limpar tela forma de pagamento implemmentar aqui
+            formaDePagamento = new FormaDePagamentoDTO();
+            this.Show();
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
-
-            
             this.Hide();
 
             foreach (Form formAberto in Application.OpenForms)
@@ -62,6 +66,12 @@ namespace university_POOI_PeriodProject
                         break;
                     }
                 }
+
+            if(FormaDePagamentoEscolhida != null)
+            {
+                
+                FormaDePagamentoEscolhida(formaDePagamento);
+            }
         }
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
@@ -72,11 +82,11 @@ namespace university_POOI_PeriodProject
                 textBox2.Text = ($"R${PRECOCURSOINTERMEDIARIO * VALORAVISTA}");
                 textBox3.Text = ($"R${PRECOCURSOAVANCADO * VALORAVISTA}");
 
-                precoCursoBasico = (PRECOCURSOBASICO * VALORAVISTA);
-                precoCursoIntermediario = (PRECOCURSOINTERMEDIARIO * VALORAVISTA);
-                precoCursoAvancado = (PRECOCURSOAVANCADO * VALORAVISTA);
+                formaDePagamento.precoCursoBasico = (PRECOCURSOBASICO * VALORAVISTA);
+                formaDePagamento.precoCursoIntermediario = (PRECOCURSOINTERMEDIARIO * VALORAVISTA);
+                formaDePagamento.precoCursoAvancado = (PRECOCURSOAVANCADO * VALORAVISTA);
 
-                emDinheiro = true;
+                formaDePagamento.emDinheiro = true;
 
             }
         }
@@ -89,40 +99,13 @@ namespace university_POOI_PeriodProject
                 textBox2.Text = ($"R${PRECOCURSOINTERMEDIARIO}");
                 textBox3.Text = ($"R${PRECOCURSOAVANCADO}");
 
-                precoCursoBasico = (PRECOCURSOBASICO);
-                precoCursoIntermediario = (PRECOCURSOINTERMEDIARIO);
-                precoCursoAvancado = (PRECOCURSOAVANCADO);
+                formaDePagamento.precoCursoBasico = (PRECOCURSOBASICO);
+                formaDePagamento.precoCursoIntermediario = (PRECOCURSOINTERMEDIARIO);
+                formaDePagamento.precoCursoAvancado = (PRECOCURSOAVANCADO);
 
-                emDebito = true;
+                formaDePagamento.emDinheiro = false;
             }
 
-        }
-
-        public bool vaiPagarEmDinheiro()
-        {
-            if(emDinheiro == true)
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
-        }
-
-        public double getPrecoCursoBasico()
-        {
-            return this.precoCursoBasico;
-        }
-
-        public double getPrecoCursoIntermediario()
-        {
-            return this.precoCursoIntermediario;
-        }
-
-        public double getPrecoCursoAvancado()
-        {
-            return this.precoCursoAvancado;
         }
     }
 }
