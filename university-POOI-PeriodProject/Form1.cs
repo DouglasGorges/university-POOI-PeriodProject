@@ -53,7 +53,7 @@ namespace university_POOI_PeriodProject
         private void listarMatriculadosToolStripMenuItem_Click(object sender, EventArgs e)
         {
             AlunosListar listar = new AlunosListar();
-            listar.abrir();
+            listar.abrir(); //Aqui é feito o comando para abrir a janela de listagem e carregar a lista
             this.Hide();
 
 

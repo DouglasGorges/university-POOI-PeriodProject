@@ -14,7 +14,7 @@ namespace university_POOI_PeriodProject
     public partial class AlunosCadastrar : Form
     {
 
-        private String DINHEIRO = "Dinheiro";
+        private String DINHEIRO = "Dinheiro"; //Constantes para uso repetitivo
         private String DEBITO = "Débito";
         
         public AlunosCadastrar()
@@ -52,7 +52,7 @@ namespace university_POOI_PeriodProject
             this.Hide();
         }
 
-        private void FormaPagamento_FormaDePagamentoEscolhida(FormaDePagamentoDTO formaDePagamento)
+        private void FormaPagamento_FormaDePagamentoEscolhida(FormaDePagamentoDTO formaDePagamento) //Método que altera o comportamento da tela de cadastro de aluno após a escolha do método de pagamento
         {
             if(formaDePagamento.emDinheiro == true)
             {
@@ -61,20 +61,6 @@ namespace university_POOI_PeriodProject
             else
             {
                 textBox4.Text = DEBITO;
-            }
-
-
-            if (textBox4.Text == DINHEIRO && radioButton1.Checked == true)
-            {
-                textBox7.Text = "R$1.000,00";
-                textBox5.Text = "R$200,00";
-                textBox6.Text = "R$800,00";
-            }
-            else
-            {
-                textBox7.Text = "R$1.000,00";
-                textBox5.Text = "R$--,--";
-                textBox6.Text = "R$1.000,00";
             }
 
             //TODO implementar preenchimentos restantes aqui
@@ -122,7 +108,7 @@ namespace university_POOI_PeriodProject
             }
         }
 
-        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        private void checkBox1_CheckedChanged(object sender, EventArgs e) //Os próximos dois métodos alteram o comportamento dos checkbox e dos radiobutton, para habilitar de acordo com as regras da escola
         {
             if (checkBox1.Checked == false)
             {
@@ -160,12 +146,12 @@ namespace university_POOI_PeriodProject
 
         
 
-        private void button2_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e) // Esse método cria o objeto Aluno no momento do clique no botão GRAVAR
         {
             Aluno aluno = new Aluno();
             aluno.setNome(textBox1.Text);
-            aluno.setCpf(double.Parse(textBox2.Text)); //falta tratar quando tem 0 à esquerda
-            //aluno.setDataNascimento(DateTime.Parse(dateTimePicker1));
+            aluno.setCpf(double.Parse(textBox2.Text)); //TODO falta tratar quando tem 0 à esquerda
+            //aluno.setDataNascimento(DateTime.Parse(dateTimePicker1)); TODO falta tratar
             aluno.setTelefone(textBox3.Text);
             aluno.setVaiPagarComo(textBox4.Text);
             
@@ -216,9 +202,9 @@ namespace university_POOI_PeriodProject
             }
 
 
-            Persistencia.Instance.AlunosMatriculados.Add(aluno);
+            Persistencia.Instance.AlunosMatriculados.Add(aluno); //Aqui o objeto é gravado na classe que serve como um banco de dados, para poder acessar depois. Eu não consegui implementar o ArrayList conforme sugerido.
 
-            ConfirmacaoDeCadastro confirmacaoDeCadastro = new ConfirmacaoDeCadastro();
+            ConfirmacaoDeCadastro confirmacaoDeCadastro = new ConfirmacaoDeCadastro(); //Aqui dispara a tela de confirmação de cadastro.
             confirmacaoDeCadastro.Show();
             this.Hide();
         }

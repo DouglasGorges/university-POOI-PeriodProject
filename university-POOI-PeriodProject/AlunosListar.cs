@@ -18,7 +18,7 @@ namespace university_POOI_PeriodProject
             InitializeComponent();
         }
         
-        private void AlunosListar_FormClosed(object sender, FormClosedEventArgs e)
+        private void AlunosListar_FormClosed(object sender, FormClosedEventArgs e) //Tratamento para fechamento da janela
         {
 
             if (Application.OpenForms.Count == 0)
@@ -38,13 +38,13 @@ namespace university_POOI_PeriodProject
             }
         }
 
-        public void abrir()
+        public void abrir() //método para abrir a tela quando clicar no botão Listar Alunos Cadastrados no Form1. Foi criado para não perder o tempo de processamento da classe. Sem o método eu não consegui carregar os alunos na lista.
         {
             showInListView();
             Show();
         }
 
-        private void showInListView()
+        private void showInListView() //Método criado para varrer a minha instância de Alunos Cadastrados e preencher o ListView.
         {
             foreach(Aluno aluno in Persistencia.Instance.AlunosMatriculados)
             {

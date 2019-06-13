@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace university_POOI_PeriodProject
 {
-    class Aluno
+    class Aluno //Essa é a classe Aluno, que será instanciada a cada novo cadastro
     {
         String nome;
         double cpf;
@@ -20,7 +20,7 @@ namespace university_POOI_PeriodProject
         String vaiPagarComo;
 
 
-        public void setNome(String nome)
+        public void setNome(String nome) //Abaixo temos getters e setters como métodos, pois ainda não consegui implementar o {get; set; }
         {
             this.nome = nome;
         }

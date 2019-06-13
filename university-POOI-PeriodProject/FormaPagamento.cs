@@ -12,7 +12,7 @@ namespace university_POOI_PeriodProject
 {
     public partial class FormaPagamento : Form
     {
-        private double PRECOCURSOBASICO = 1000;
+        private double PRECOCURSOBASICO = 1000; //Constantes com os valores do curso
         private double PRECOCURSOINTERMEDIARIO = 2000;
         private double PRECOCURSOAVANCADO = 5000;
         private double VALORAVISTA = 0.8;
@@ -49,7 +49,7 @@ namespace university_POOI_PeriodProject
 
         public void abrir()
         {
-            //TODO se precisar limpar tela forma de pagamento implemmentar aqui
+            //TODO Limpar tela forma de pagamento implemmentar aqui
             formaDePagamento = new FormaDePagamentoDTO();
             this.Show();
         }
@@ -67,14 +67,14 @@ namespace university_POOI_PeriodProject
                     }
                 }
 
-            if(FormaDePagamentoEscolhida != null)
+            if(FormaDePagamentoEscolhida != null) //Instanciando a classe de forma a ser "null safe"
             {
                 
                 FormaDePagamentoEscolhida(formaDePagamento);
             }
         }
 
-        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        private void radioButton1_CheckedChanged(object sender, EventArgs e) //Dois métodos para dinamizar a apresentação dos valores dos cursos
         {
             if (radioButton1.Checked)
             {

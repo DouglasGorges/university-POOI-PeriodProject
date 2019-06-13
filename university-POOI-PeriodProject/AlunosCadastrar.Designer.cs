@@ -195,6 +195,7 @@
             // 
             // textBox4
             // 
+            this.textBox4.Enabled = false;
             this.textBox4.Location = new System.Drawing.Point(321, 149);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(130, 20);
@@ -203,19 +204,19 @@
             // 
             // textBox5
             // 
+            this.textBox5.Enabled = false;
             this.textBox5.Location = new System.Drawing.Point(322, 234);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(130, 20);
             this.textBox5.TabIndex = 18;
-            this.textBox5.Text = "R$0,00";
             // 
             // textBox6
             // 
+            this.textBox6.Enabled = false;
             this.textBox6.Location = new System.Drawing.Point(322, 281);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(130, 20);
             this.textBox6.TabIndex = 19;
-            this.textBox6.Text = "R$0,00";
             // 
             // label9
             // 
@@ -255,11 +256,11 @@
             // 
             // textBox7
             // 
+            this.textBox7.Enabled = false;
             this.textBox7.Location = new System.Drawing.Point(321, 192);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(130, 20);
             this.textBox7.TabIndex = 25;
-            this.textBox7.Text = "(Primeiro escolha um curso)";
             // 
             // radioButton1
             // 

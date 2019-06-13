@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace university_POOI_PeriodProject
 {
-    public class Persistencia
+    public class Persistencia //Criada essa classe para servir como banco de dados para guardar os objetos Aluno
     {
         private static readonly Persistencia instance = new Persistencia();
 

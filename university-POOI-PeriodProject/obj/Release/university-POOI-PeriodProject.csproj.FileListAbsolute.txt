@@ -15,3 +15,8 @@ D:\Faculdade\GitHub\university-POOI-PeriodProject\university-POOI-PeriodProject\
 D:\Faculdade\GitHub\university-POOI-PeriodProject\university-POOI-PeriodProject\obj\Release\university-POOI-PeriodProject.csproj.CoreCompileInputs.cache
 D:\Faculdade\GitHub\university-POOI-PeriodProject\university-POOI-PeriodProject\obj\Release\university-POOI-PeriodProject.exe
 D:\Faculdade\GitHub\university-POOI-PeriodProject\university-POOI-PeriodProject\obj\Release\university-POOI-PeriodProject.pdb
+D:\Faculdade\GitHub\university-POOI-PeriodProject\university-POOI-PeriodProject\bin\Release\university-POOI-PeriodProject.exe.manifest
+D:\Faculdade\GitHub\university-POOI-PeriodProject\university-POOI-PeriodProject\bin\Release\university-POOI-PeriodProject.application
+D:\Faculdade\GitHub\university-POOI-PeriodProject\university-POOI-PeriodProject\obj\Release\university-POOI-PeriodProject.exe.manifest
+D:\Faculdade\GitHub\university-POOI-PeriodProject\university-POOI-PeriodProject\obj\Release\university-POOI-PeriodProject.application
+D:\Faculdade\GitHub\university-POOI-PeriodProject\university-POOI-PeriodProject\obj\Release\university-POOI-PeriodProject.csprojAssemblyReference.cache

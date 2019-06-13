@@ -16,7 +16,7 @@ namespace university_POOI_PeriodProject
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Home());
+            Application.Run(new Home()); //TODO tratar exception
         }
     }
 }
